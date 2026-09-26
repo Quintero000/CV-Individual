@@ -1,0 +1,56 @@
+:root {
+  --azul: #1d4ed8;
+  --azul-hover: #1739a8;
+  --gris: #6c757d;
+  --gris-claro: #f1f3f5;
+  --blanco: #ffffff;
+}
+
+/* Fondos oscuros (navbar, header, footer) -> azul */
+.navbar.bg-dark,
+header.bg-dark,
+footer.bg-dark {
+  background-color: var(--azul) !important;
+}
+
+/* Links del menú y hover en blanco resaltado */
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--blanco) !important;
+  text-decoration: underline;
+}
+
+/* Botones principales -> azul con texto blanco */
+.btn-primary {
+  background-color: var(--azul) !important;
+  border-color: var(--azul) !important;
+  color: var(--blanco) !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-hover) !important;
+  border-color: var(--azul-hover) !important;
+}
+
+/* Íconos y acentos en azul */
+.text-primary {
+  color: var(--azul) !important;
+}
+
+/* Tarjetas y listas con borde gris suave */
+.card,
+.list-group-item {
+  border-color: var(--gris) !important;
+}
+
+/* Fondo general -> gris muy claro, casi blanco */
+body {
+  background-color: var(--gris-claro);
+  color: #343a40;
+}
+
+/* Texto secundario en gris medio */
+.text-secondary {
+  color: var(--gris) !important;
+}
